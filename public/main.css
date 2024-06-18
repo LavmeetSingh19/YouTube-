@@ -1,0 +1,230 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #282727;
+  height: 100vh;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+li{
+  list-style: none;
+}
+
+.section {
+  max-width: 98%;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flexBet {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flexAli {
+  display: flex;
+  align-items: center;
+}
+
+.flexBetAli {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ================== Navbar
+===================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;  
+  background-color: #282727;
+  top: 0;
+  height: 50px;
+  z-index: 9999;
+}
+
+.leftNav {
+  gap: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.hamburger{
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span{
+  height: 2px;
+  width: 20px;
+  color: white;
+  background-color: white;
+}
+
+.hamburger span:nth-of-type(1){
+  margin-bottom: 5px;
+}
+
+.hamburger span:nth-of-type(2){
+  margin-bottom: 5px;
+}
+
+.middleNav {
+  position: relative;
+  gap: 10px;
+  overflow: hidden;
+  font-size: 20px;
+}
+
+.middleNav input {
+  max-height: 40px;
+  min-width: 500px;
+  border-radius: 10px;
+  border: .5px solid grey;
+  box-shadow: 6px grey;
+  font-size: 20px;
+  background-color: #282727;
+  overflow: hidden;
+  outline: none;
+  color: white;
+  padding: 10px;
+}
+
+.middleNav .fa-magnifying-glass {
+  position: absolute;
+  left: 87%;
+  color: white;
+  background-color: #3b3a3a;
+}
+
+.middleNav .fa-microphone {
+  color: white;
+  background-color: #3b3a3a;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.rightNav {
+  font-size: 20px;
+  color: white;
+  gap: 20px;
+}
+
+.profile img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.profile {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* ================== Sidebar
+===================== */
+
+.mainContent{
+ margin-top: 10px;
+ position: relative;
+}
+
+.sidebar{
+  max-width: 180px;
+  overflow-y: auto;
+  position: fixed;
+  overflow-x: hidden;
+  max-height: calc(100vh - 50px);
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; 
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.separation{
+  margin: 20px 0px;
+  height: 1px;
+  width: 100%;
+  background-color: white;
+}
+
+.sidebarItems_1 a:hover, .sidebarItems_2 a:hover{
+  cursor: pointer;
+  background-color: cyan;
+}
+
+.sidebarItems_1 a,.sidebarItems_2 a {
+  display: block;
+  border-radius: 5px;
+  padding: 7px 15px;
+}
+
+.sidebarItems_1 p,.sidebarItems_2 p{
+  margin-left: 20px;
+  left: 0;
+}
+
+.fa-chevron-right{
+  margin-left: 10px;
+}
+
+.subsProfile{
+  max-height: 20px;
+  max-width: 20px;
+}
+
+.subsProfile img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+/* ================== Video Content
+===================== */
+
+.videoContent{
+  max-width: calc(100% - 180px);
+  display: grid;
+  grid-template-columns: 370px 370px 370px;
+  gap: 20px;
+  position: relative;
+  padding: 0px 0px 0px 30px;
+  -ms-overflow-style: none; 
+  height: calc(100% - 50px);
+  width: calc(100% - 180px);
+  right: -10%;
+}
+
+.videoContent::-webkit-scrollbar {
+  display: none;
+}
+
+
+.videoDetails{
+  max-height: 200px;
+  max-width: 390px;
+}
+
+.videoDetails video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
